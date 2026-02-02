@@ -19,5 +19,8 @@
     "templates"
   ],
   "author": "vudovn",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
 }

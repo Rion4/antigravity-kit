@@ -135,3 +135,19 @@ ag-kit init --dry-run      # Preview actions without executing
 ## License
 
 MIT © Vudovn
+
+```dockerfile
+FROM node:16-alpine
+
+WORKDIR /app
+
+COPY package*.json .
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
+```
